@@ -102,19 +102,20 @@ export default function Home() {
             <p className="text-slate-500 text-sm mt-1">{user?.email}</p>
           </div>
           <div className="flex items-center gap-3">
-  <Link
-    href="/profile"
-    className="text-sm text-blue-600 hover:text-blue-800 font-medium px-3 py-1.5 rounded-lg hover:bg-blue-50 transition"
-  >
-    البروفايل
-  </Link>
-  <button
-    onClick={handleLogout}
-    className="text-sm text-red-500 hover:text-red-700 font-medium px-3 py-1.5 rounded-lg hover:bg-red-50 transition"
-  >
-    تسجيل خروج
-  </button>
-</div>
+            <Link
+              href="/profile"
+              className="text-sm text-blue-600 hover:text-blue-800 font-medium px-3 py-1.5 rounded-lg hover:bg-blue-50 transition"
+            >
+              البروفايل
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="text-sm text-red-500 hover:text-red-700 font-medium px-3 py-1.5 rounded-lg hover:bg-red-50 transition"
+            >
+              تسجيل خروج
+            </button>
+          </div>
+        </div>
 
         <form onSubmit={addTodo} className="flex gap-3 mb-8">
           <input
